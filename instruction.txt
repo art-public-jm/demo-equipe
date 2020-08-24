@@ -1,0 +1,18 @@
+Comment initialiser un dépot git ?
+0. Configurer Git (une seule fois sur votre poste)
+> git config --global user.name "Votre nom"
+> git config --global user.email "votre@courriel"
+
+1. Créer le dépot local
+> git init
+> git add .
+> git commit -m "Un message clair"
+
+2. Attacher le dépôt à un remote
+2.1 Sur le serveur distant, créer le dépot
+2.2 Configurer le remote sur le local
+> git remote add origin URL_DU_DEPOT_DISTANT
+> git push origin master
+
+- Cloner le dépot distant
+> git clone URL_DU_DEPOT_DISTANT
